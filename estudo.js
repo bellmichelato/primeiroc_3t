@@ -13,4 +13,18 @@ let tabuada = 2;
      document.write(tabuada + " x 10 = " + (tabuada*10)+ "<br>");
      
  }
-    
+
+fuction minhatabuada(){
+    for(let i = 1; i <=10; i++){ 
+        document.write("tabuada do " + i + "<br>");
+        for(let j = 1; j <= 10; j++){
+            (document.write(i  + " x  " + j + " = " + (j*i) + "<br>");
+        } 
+        document.write("<br>");
+    }
+}
+
+fuction cubo(){
+    for(let i =20 ; i < 2; i--)
+       document.write("o cubo de " + i + " é (" + i " x " + i + " x " + i + " = " +(i*i*i*)+"<br>");
+}
