@@ -27,15 +27,39 @@ function mostraTabuada(){
     for(let i = 1; i <= 10; i++){
         document.write("O valor do i " + i + "<br>");
     }
-}
+} 
+function moeda(atual)
+    return 
+
+
 function total(){
     let v = document.getElementById("valor").value;
     let j = document.getElementById("juros").value;
     let t = document.getElementById("meses").value;
+
+    if(Number(v)){
+        alert("o valor deve ser um número");
+        document.getElementById("valor").value; = "";
+        document.getElementById("valor").focus();
+        return
+    }
+    if(Number(j)){
+        alert("o valor dos juros deve ser numérico");
+        document.getElementById("juros").value; = "";
+        document.getElementById("juros").focus();
+        return
+    }
+    if(Number(t)){
+    alert("o capital deve ser numérico");
+    document.getElementById("meses").value; = "";
+    document.getElementById("meses").focus();
+    return
+    }
+
     let r = 0;
     for(let i =1; i <=t; i++){
         r = v * (1 + (j/100));
-        document.write("Mês " + i + " - valor: " + r + "<br>");
+        document.write("Mês " + i + " = " + r + "<br>");
         v = r;
     }
     document.write("Resultado: " + r);
@@ -64,4 +88,4 @@ function Media(){
         v = r;
     
 }
-document.write("Resultado: " + r);
+document.write("Resultado: " + moeda);
