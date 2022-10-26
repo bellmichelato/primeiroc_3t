@@ -86,6 +86,9 @@ function Media(){
         r = v * (1 /(j/100));
         document.write("Mês " + i + " - valor: " + r + "<br>");
         v = r;
-    
+        //document.write("Mês " + i + " - valor: " + r + "<br>");
 }
-document.write("Resultado: " + moeda);
+document.getElementById("totalgeral").focus().innerHTML = "total:"+moeda(r);
+//document.write("Resultado: " + moeda);
+
+
